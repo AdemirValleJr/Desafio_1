@@ -24,7 +24,7 @@ namespace Desafio1
 
             var html = await htmlTask;
 
-            var count = Regex.Matches(html, @"Hiper").Count;
+            var count = System.Text.RegularExpressions.Regex.Matches(html, @"Hiper").Count;
 
             Console.WriteLine($"Quantidade: {count}");
 
